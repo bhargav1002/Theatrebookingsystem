@@ -4,9 +4,9 @@ import Tdata from './Tdata';
 export default function Td(props) {
 
     const [cell, setCell] = useState([]);
-    const [alreadybooked, setAlreadybooked] = useState(props.data.AlreadyBooked);
+    let alreadybooked = props.data.AlreadyBooked;
     const [booked, setbooked] = useState([]);
-    const [row,setrow] = useState(props.data.row);
+    let row= props.data.row;
 
     const valueHandler = (obj) =>
     {
@@ -26,7 +26,7 @@ export default function Td(props) {
                 setbooked((prev) => [...prev,0]);
             }
         }
-    },[props.data]);
+    },[props.data,alreadybooked]);
 
 
 
