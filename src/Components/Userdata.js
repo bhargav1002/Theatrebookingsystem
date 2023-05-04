@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Userdata(props) {
   return (
-    <div className='flex'>
+    <div className='flex justify-center'>
     <div className='text-left'>
           <span className='font-bold'>MovieName</span><br></br>
           <span className='font-bold'>NoofBookedSeat</span><br></br>

@@ -34,7 +34,8 @@ export default function Table() {
     },[data])
 
   return (
-    <div>
+    <div className='flex justify-center flex-col container mx-auto mt-10'>
+        <h1 className='font-bold text-2xl mb-5'>Theatre Booking System</h1>
         <table className='border border-2'>
             <tbody>
                 {rows.map((obj,i)=>
